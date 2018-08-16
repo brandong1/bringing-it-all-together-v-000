@@ -29,13 +29,13 @@ class Dog
   end
 
     def save
-      if self.find_by_id(id)
+      if self.
         self.update
-    else
-    sql = <<-SQL
-      INSERT INTO dogs (name, breed)
-      VALUES (?, ?)
-    SQL
+      else
+        sql = <<-SQL
+          INSERT INTO dogs (name, breed)
+          VALUES (?, ?)
+        SQL
 
     DB[:conn].execute(sql, self.name, self.breed)
 
