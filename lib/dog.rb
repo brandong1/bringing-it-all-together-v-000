@@ -29,7 +29,7 @@ class Dog
   end
 
     def save
-      if self.new
+      if self
         self.update
       else
         sql = <<-SQL
