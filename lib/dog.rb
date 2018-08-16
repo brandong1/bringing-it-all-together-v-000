@@ -3,6 +3,7 @@ class Dog
 
 
   def initialize(id: nil, name:, breed:)
+    @id = id
     @name = name
     @breed = breed
   end
@@ -27,7 +28,7 @@ class Dog
     end
 
     def save
-      if self.id 
+      if self.id
         self.update
     else
     sql = <<-SQL
