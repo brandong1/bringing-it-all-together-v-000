@@ -1,5 +1,11 @@
 class Dog
-  attr_accessor :name, :breed
+  attr_accessor :id, :name, :breed
 
 
+  def initialize
+    @id = name
+    @name = name
+    @breed
+  end
+  
 end
