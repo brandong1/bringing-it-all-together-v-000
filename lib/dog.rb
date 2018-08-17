@@ -45,10 +45,10 @@ class Dog
     end
 
     def self.create(name, breed)
-   dog = self.new(name, breed)
-   dog.save
-   dog
- end
+      dog = self.new(name, breed)
+      dog.save
+      dog
+    end
 
   def self.find_by_id(id)
     sql = <<-SQL
