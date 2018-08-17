@@ -48,8 +48,8 @@ class Dog
       end
     end
 
-    def self.create(name, breed)
-      dog = self.new(name, breed)
+    def self.create(attributes)
+      dog = self.new(attributes)
       dog.save
       dog
     end
@@ -81,7 +81,8 @@ class Dog
     id = row[0]
     name = row[1]
     breed = row[2]
-    self.new(id, name, breed)
+    attributes = {id: id, name: name, breed: breed}
+    self.new(attributes)
   end
 
   def self.find_by_name(name)
