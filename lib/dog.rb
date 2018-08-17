@@ -48,7 +48,7 @@ class Dog
       dog = self.new(name: name, breed: breed)
       dog.save
       dog
-      binding.pry
+      #binding.pry
     end
 
   def self.find_by_id(id)
