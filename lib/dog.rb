@@ -8,7 +8,7 @@ class Dog
     @id = id
     @name = name
     @breed = breed
-    pry
+    binding.pry
     #@@all << self
   end
 
