@@ -60,8 +60,8 @@ class Dog
     SQL
     DB[:conn].execute(sql, id).map do |row|
         self.new_from_db(row)
+        binding.pry
       end
-      binding.pry
   end
 
  def self.find_or_create_by(name:, breed:)
